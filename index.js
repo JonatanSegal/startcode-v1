@@ -1,4 +1,6 @@
 import { renderTemplate, setActive, showPage } from "./utils.js"
+import {setupHandler} from "/js-for-pages/page1.js"
+import {renderText} from "/js-for-pages/page2.js"
 
 
 
@@ -12,9 +14,11 @@ function renderMenuItems(evt) {
   switch (id) {
       //Here you can execute JavaScript for the selected page
     case "page-1": {
+      setupHandler()
       break
     }
     case "page-2": {
+      renderText()
       break
     }
     case "page-3": {
